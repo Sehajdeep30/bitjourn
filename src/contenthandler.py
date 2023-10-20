@@ -48,7 +48,7 @@ class ContentHandler:
 
         # merge ads list and post_objs list so that ads appear randomly
         ads = self.get_ads()
-        print(ads)
+
         for i, _ in enumerate(post_objs):
             if i % 3 == 0:
                 post_objs.insert(i, ads[random.randint(0, len(ads) - 1)])
